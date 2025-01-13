@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://lwyd.in/">
-    <title>Redirecting...</title>
+    <title>Redirect on Click</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,28 +15,28 @@
             background-color: #f4f4f9;
             color: #333;
         }
-        a {
-            display: inline-block;
+        button {
             padding: 10px 20px;
-            margin-top: 10px;
             background-color: #007BFF;
             color: white;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
             font-size: 18px;
             font-weight: bold;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        a:hover {
+        button:hover {
             background-color: #0056b3;
         }
-        p {
-            text-align: center;
-            font-size: 20px;
-        }
     </style>
+    <script>
+        function redirectToSite() {
+            window.location.href = "https://lwyd.in/";
+        }
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://lwyd.in/">Click here</a>.</p>
+    <button onclick="redirectToSite()">Click here to visit LWYD</button>
 </body>
 </html>
